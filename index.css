@@ -1,0 +1,44 @@
+* {
+  height: 100%;
+}
+
+.countainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  background:conic-gradient(transparent,#444 );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: black-circle 1s linear infinite;
+}
+
+.circle::before {
+  width: 75%;
+  height: 75%;
+  content: "";
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@keyframes black-circle {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+
+} 
